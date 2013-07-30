@@ -112,7 +112,7 @@ void restart_root_service(int fd, void *cookie)
     char buf[100];
     char value[PROPERTY_VALUE_MAX];
     char build_type[PROPERTY_VALUE_MAX];
-    char cm_version[PROPERTY_VALUE_MAX];
+    char carbon_version[PROPERTY_VALUE_MAX];
 
     if (getuid() == 0) {
         snprintf(buf, sizeof(buf), "adbd is already running as root\n");
